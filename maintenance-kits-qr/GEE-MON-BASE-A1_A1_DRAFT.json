@@ -1,0 +1,47 @@
+{
+  "sku": "GEE-MON-BASE-A1",
+  "revision": "A1",
+  "record_status": "HOLD",
+  "fitment_status": "CHECK_REQUIRED",
+  "vehicle_scope": {
+    "make": "Geely",
+    "model": "Monjaro",
+    "generation": "KX11",
+    "engine": "JLH-4G20TDB",
+    "transmission": "8AT",
+    "drivetrain": "AWD",
+    "market": "Russia"
+  },
+  "build_vin_rule": {
+    "mode": "VIN_REQUIRED",
+    "message": "Compatibility is not released yet. Representative Russian VIN/EPC and physical fit are still required.",
+    "released_build_from": null,
+    "released_build_to": null
+  },
+  "bom": [
+    {"role":"OIL_FILTER","manufacturer":"MANN-FILTER","article":"HU 8014 Z","quantity":1,"oe_references":["1056025900"]},
+    {"role":"AIR_FILTER","manufacturer":"BIG FILTER","article":"GB-95157","quantity":1,"oe_references":["2032047000","2032061800","2032069500","8888475602"]},
+    {"role":"CABIN_FILTER","manufacturer":"BIG FILTER","article":"GB-98104/C","quantity":1,"oe_references":["8025530600"]},
+    {"role":"DRAIN_SEAL","manufacturer":"GEELY/reference","article":"1016057088","quantity":1,"oe_references":["1016057088"]}
+  ],
+  "doc_status": "HOLD",
+  "pack_revision": "PK-A0",
+  "kit_lot": null,
+  "release_gates": {
+    "tech": "HOLD",
+    "vin_epc": "HOLD",
+    "physical": "HOLD",
+    "doc": "HOLD",
+    "pack": "HOLD",
+    "brand_tm": "HOLD",
+    "qr_rev": "HOLD",
+    "econ": "GREEN",
+    "supplier": "HOLD"
+  },
+  "public_support": {
+    "check_required_message": "VIN/build verification is required before purchase or installation. This draft revision is not released as compatible.",
+    "contact_label": "Проверить у специалиста",
+    "contact_url": null
+  },
+  "updated_at": "2026-08-30T00:00:00+00:00"
+}
