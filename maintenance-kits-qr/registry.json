@@ -1,0 +1,12 @@
+{
+  "schema_version": "R1",
+  "records": [
+    {
+      "sku": "GEE-MON-BASE-A1",
+      "revision": "A1",
+      "path": "GEE-MON-BASE-A1_A1_DRAFT.json",
+      "record_status": "HOLD",
+      "fitment_status": "CHECK_REQUIRED"
+    }
+  ]
+}
