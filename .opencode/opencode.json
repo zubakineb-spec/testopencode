@@ -1,0 +1,21 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "deepseek/deepseek-v4-pro",
+  "agent": {
+    "build": {
+      "model": "deepseek/deepseek-v4-pro",
+      "variant": "high",
+      "permission": {
+        "edit": "deny",
+        "task": {
+          "*": "deny",
+          "1c-architect": "allow",
+          "1c-developer": "allow",
+          "1c-reviewer": "allow",
+          "1c-tester": "allow",
+          "1c-auditor": "allow"
+        }
+      }
+    }
+  }
+}

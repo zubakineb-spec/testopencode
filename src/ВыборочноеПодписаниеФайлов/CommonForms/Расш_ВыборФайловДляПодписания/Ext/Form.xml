@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Выбор файлов для подписания</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<Group>Vertical</Group>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="ДекорацияПояснение" id="1">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отметьте файлы, которые необходимо подписать электронной подписью:</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ДекорацияПояснениеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ДекорацияПояснениеРасширеннаяПодсказка" id="3"/>
+		</LabelDecoration>
+		<Table name="Файлы" id="4">
+			<Representation>List</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<HeightInTableRows>8</HeightInTableRows>
+			<DataPath>Файлы</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Файлы</v8:content>
+				</v8:item>
+			</Title>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ФайлыКонтекстноеМеню" id="5"/>
+			<AutoCommandBar name="ФайлыКоманднаяПанель" id="6">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ФайлыРасширеннаяПодсказка" id="7"/>
+			<ChildItems>
+				<CheckBoxField name="ФайлыВыбрано" id="8">
+					<DataPath>Файлы.Выбрано</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбрано</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ФайлыВыбраноКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ФайлыВыбраноРасширеннаяПодсказка" id="10"/>
+				</CheckBoxField>
+				<InputField name="ФайлыФайл" id="11">
+					<DataPath>Файлы.Файл</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Файл</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ФайлыФайлКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="ФайлыФайлРасширеннаяПодсказка" id="13"/>
+				</InputField>
+				<InputField name="ФайлыНаименование" id="14">
+					<DataPath>Файлы.Наименование</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ФайлыНаименованиеКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ФайлыНаименованиеРасширеннаяПодсказка" id="16"/>
+				</InputField>
+				<InputField name="ФайлыРасширение" id="17">
+					<DataPath>Файлы.Расширение</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ФайлыРасширениеКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ФайлыРасширениеРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="ФайлыРазмер" id="20">
+					<DataPath>Файлы.Размер</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Размер</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ФайлыРазмерКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ФайлыРазмерРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<CheckBoxField name="ФайлыПодписанЭП" id="23">
+					<DataPath>Файлы.ПодписанЭП</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подписан ранее</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ФайлыПодписанЭПКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ФайлыПодписанЭПРасширеннаяПодсказка" id="25"/>
+				</CheckBoxField>
+				<InputField name="ФайлыДокумент" id="54">
+					<DataPath>Файлы.Документ</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ФайлыДокументКонтекстноеМеню" id="55"/>
+					<ExtendedTooltip name="ФайлыДокументРасширеннаяПодсказка" id="56"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="ГруппаКоманды" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команды</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКомандыРасширеннаяПодсказка" id="27"/>
+			<ChildItems>
+				<Button name="ВыбратьВсе" id="28">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ВыбратьВсе</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбрать все</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ВыбратьВсеРасширеннаяПодсказка" id="29"/>
+				</Button>
+				<Button name="СнятьВсе" id="30">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.СнятьВсе</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Снять все</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СнятьВсеРасширеннаяПодсказка" id="31"/>
+				</Button>
+				<Button name="ОткрытьФайл" id="32">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОткрытьФайл</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Открыть файл</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ОткрытьФайлРасширеннаяПодсказка" id="33"/>
+				</Button>
+				<Button name="ПроверитьПодписи" id="34">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ПроверитьПодписи</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проверить подписи</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ПроверитьПодписиРасширеннаяПодсказка" id="35"/>
+				</Button>
+				<Button name="ПодписатьВыбранные" id="36">
+					<Type>UsualButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.ПодписатьВыбранные</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подписать выбранные</v8:content>
+						</v8:item>
+					</Title>
+					<ButtonImportance>Main</ButtonImportance>
+					<ExtendedTooltip name="ПодписатьВыбранныеРасширеннаяПодсказка" id="37"/>
+				</Button>
+				<Button name="Отмена" id="38">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.Отмена</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отмена</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ОтменаРасширеннаяПодсказка" id="39"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Файлы" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Файлы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Выбрано" id="41">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбрано</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Файл" id="42">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Файл</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Файлы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Наименование" id="43">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Расширение" id="44">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Размер" id="45">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Размер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПодписанЭП" id="46">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подписан ранее</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Документ" id="53">
+					<Type>
+						<v8:Type>cfg:CatalogRef.ДокументыПредприятия</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыбратьВсе" id="47">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать все</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ВыбратьВсе</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СнятьВсе" id="48">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять все</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СнятьВсе</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьФайл" id="49">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть файл</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьФайл</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПроверитьПодписи" id="50">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подписи</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПроверитьПодписи</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПодписатьВыбранные" id="51">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подписать выбранные</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПодписатьВыбранные</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Отмена" id="52">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Отмена</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,45 @@
+build/output/
+
+# --- добавлено при выгрузке на GitHub 2026-10-26 ---
+# Базы, бэкапы, поставки и журналы 1С
+*.1CD
+*.dt
+*.cf
+*.cfu
+*.cfl
+*.cfe
+*.lgp
+*.lgf
+1Cv8FTxt/
+1Cv8Log/
+*.__comobject
+*.log
+# Архивы и бинарники
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.exe
+*.apk
+# Рабочие стенды, выгрузки типовых конфигураций, временное
+.local/
+.runtime/
+runtime/
+.tmp/
+tmp/
+.work/
+.tools/
+node_modules/
+.next/
+__pycache__/
+.venv/
+venv/
+# Секреты
+.env
+.env.*
+*.pfx
+*.p12
+*.pem
+*.key
+*.clixml
+*secret*
